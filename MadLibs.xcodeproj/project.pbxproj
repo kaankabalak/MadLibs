@@ -14,6 +14,8 @@
 		8C949F7F1F157AD600FF3D34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C949F7D1F157AD600FF3D34 /* LaunchScreen.storyboard */; };
 		8C949F8A1F157AD600FF3D34 /* MadLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C949F891F157AD600FF3D34 /* MadLibsTests.swift */; };
 		8C949F951F157AD600FF3D34 /* MadLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C949F941F157AD600FF3D34 /* MadLibsUITests.swift */; };
+		8C949FA31F15A77200FF3D34 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C949FA21F15A77200FF3D34 /* OtherViewController.swift */; };
+		8C949FA71F16D18E00FF3D34 /* OtherViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C949FA61F16D18E00FF3D34 /* OtherViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8C949F901F157AD600FF3D34 /* MadLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C949F941F157AD600FF3D34 /* MadLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsUITests.swift; sourceTree = "<group>"; };
 		8C949F961F157AD600FF3D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C949FA21F15A77200FF3D34 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		8C949FA61F16D18E00FF3D34 /* OtherViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				8C949F741F157AD600FF3D34 /* AppDelegate.swift */,
 				8C949F761F157AD600FF3D34 /* ViewController.swift */,
+				8C949FA21F15A77200FF3D34 /* OtherViewController.swift */,
+				8C949FA61F16D18E00FF3D34 /* OtherViewControllerDelegate.swift */,
 				8C949F781F157AD600FF3D34 /* Main.storyboard */,
 				8C949F7B1F157AD600FF3D34 /* Assets.xcassets */,
 				8C949F7D1F157AD600FF3D34 /* LaunchScreen.storyboard */,
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C949FA71F16D18E00FF3D34 /* OtherViewControllerDelegate.swift in Sources */,
 				8C949F771F157AD600FF3D34 /* ViewController.swift in Sources */,
+				8C949FA31F15A77200FF3D34 /* OtherViewController.swift in Sources */,
 				8C949F751F157AD600FF3D34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

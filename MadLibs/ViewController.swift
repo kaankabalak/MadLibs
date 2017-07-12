@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, OtherViewControllerDelegate {
 
+    @IBOutlet weak var madLibsResult: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func composeButtonClicked(_ sender: Any) {
+        print("Clicked")
+        performSegue(withIdentifier: "ComposeSegue", sender: nil)
+    }
+    
+    @IBAction func unwind(segue:UIStoryboardSegue) { }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nav = segue.destination as! OtherViewController
+        nav.delegate = self
+    }
+    
+    func passData(by controller: OtherViewController, with text: String) {
+        madLibsResult.text = text
+    }
 }
 
